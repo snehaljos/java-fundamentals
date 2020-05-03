@@ -1,8 +1,8 @@
 package algorithms.search;
 
 /**
- * Provides a simple implementation of binary-search based on an array. To use binary-search on an
- * array, instantiate an object of this class using {@link BinarySearch#BinarySearch(Comparable[])}
+ * Provides a simple implementation of binary-search based on a sorted array. To use binary-search
+ * on an array, instantiate an object of this class using {@link BinarySearch#BinarySearch(Comparable[])}
  * and then call {@link BinarySearch#searchFor(Comparable)} on this object. This method is
  * non-destructive, which means that you can call the method multiple times on the same array.
  *
@@ -25,7 +25,7 @@ public class BinarySearch<E extends Comparable<? super E>> {
   private final E[] array;
 
   /**
-   * @param array the array in which should be searched, must not be null
+   * @param array a sorted array in which should be searched, must not be null
    */
   public BinarySearch(final E[] array) {
     if (array == null) {

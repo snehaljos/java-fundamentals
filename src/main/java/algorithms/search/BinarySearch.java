@@ -61,6 +61,8 @@ public class BinarySearch<E extends Comparable<? super E>> {
         case -1:
           rightBoundary = middleIndex - 1;
           break;
+        default:
+          //do nothing - this should not happen
       }
     }
     return -1;

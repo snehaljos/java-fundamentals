@@ -48,7 +48,7 @@ public class BinarySearch<E extends Comparable<? super E>> {
 
     while (leftBoundary <= rightBoundary) {
       int span = rightBoundary - leftBoundary;
-      if (PREFER_RIGHT && span % 2 != 0) {
+      if (PREFER_RIGHT && span % 2 == 0) {
         span++;
       }
       final int middleIndex = leftBoundary + (span / 2);

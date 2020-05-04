@@ -113,8 +113,8 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">BinarySearch&lt;E extends java.lang.Comparable&lt;? super E&gt;&gt;</span>
 extends java.lang.Object</pre>
-<div class="block">Provides a simple implementation of binary-search based on an array. To use binary-search on an
- array, instantiate an object of this class using <a href="../../algorithms/search/BinarySearch.html#BinarySearch-E:A-"><code>BinarySearch(Comparable[])</code></a>
+<div class="block">Provides a simple implementation of binary-search based on a sorted array. To use binary-search
+ on an array, instantiate an object of this class using <a href="../../algorithms/search/BinarySearch.html#BinarySearch-E:A-"><code>BinarySearch(Comparable[])</code></a>
  and then call <a href="../../algorithms/search/BinarySearch.html#searchFor-E-"><code>searchFor(Comparable)</code></a> on this object. This method is
  non-destructive, which means that you can call the method multiple times on the same array.</div>
 <dl>
@@ -194,7 +194,7 @@ extends java.lang.Object</pre>
 <pre>public&nbsp;BinarySearch(<a href="../../algorithms/search/BinarySearch.html" title="type parameter in BinarySearch">E</a>[]&nbsp;array)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>array</code> - the array in which should be searched, must not be null</dd>
+<dd><code>array</code> - a sorted array in which should be searched, must not be null</dd>
 </dl>
 </li>
 </ul>

@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":9,"i8":10,"i9":10,"i10":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":9,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -179,13 +179,17 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../datastructures/math/Matrix.html#multiply-datastructures.math.Matrix-">multiply</a></span>(<a href="../../datastructures/math/Matrix.html" title="class in datastructures.math">Matrix</a>&nbsp;matrix)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../datastructures/math/Matrix.html#multiply-int-">multiply</a></span>(int&nbsp;scalar)</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../datastructures/math/Matrix.html#multiply-datastructures.math.Matrix-">multiply</a></span>(<a href="../../datastructures/math/Matrix.html" title="class in datastructures.math">Matrix</a>&nbsp;matrix)</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../datastructures/math/Matrix.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../datastructures/math/Matrix.html#transpose--">transpose</a></span>()</code>
 <div class="block">Transposes the matrix</div>
@@ -342,6 +346,19 @@ extends java.lang.Object</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>matrix</code> - which should be multiplied to this matrix. The width of the base-matrix has to
                match the height of the matrix specified in this parameter</dd>
+</dl>
+</li>
+</ul>
+<a name="multiply-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>multiply</h4>
+<pre>public&nbsp;void&nbsp;multiply(int&nbsp;scalar)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>scalar</code> - which the matrix should be scaled with</dd>
 </dl>
 </li>
 </ul>

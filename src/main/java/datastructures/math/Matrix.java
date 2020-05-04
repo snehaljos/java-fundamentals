@@ -172,6 +172,20 @@ public class Matrix {
     this.array = result;
   }
 
+  /**
+   * @param scalar which the matrix should be scaled with
+   */
+  public void multiply(int scalar) {
+    if (this.array.length == 0) {
+      return;
+    }
+    for (int m = 0; m < this.array[0].length; m++) {
+      for (int n = 0; n < this.array.length; n++) {
+        this.array[n][m] *= scalar;
+      }
+    }
+  }
+
   @Override
   public String toString() {
     return "Matrix{" +

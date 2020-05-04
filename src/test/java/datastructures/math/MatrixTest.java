@@ -35,6 +35,13 @@ public class MatrixTest extends TestCase {
     matrixA.transpose();
     matrixA.multiply(matrixB);
     assertEquals(matrixA, new Matrix(new int[][]{{4, 8, 12}, {8, 16, 24}, {12, 24, 36}}));
+
+    final Matrix matrixC = new Matrix(base);
+    matrixB.multiply(2);
+    matrixC.add(matrixC);
+    assertEquals(matrixB, matrixC);
+    matrixB.multiply(0);
+    assertEquals(matrixB, new Matrix(new int[][]{{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}}));
   }
 
   public void testEmptyMatrix() {
@@ -49,6 +56,10 @@ public class MatrixTest extends TestCase {
     matrixA.multiply(matrixB);
     assertEquals(matrixA, matrixB);
     assertEquals(matrixA, matrixA.clone());
+    matrixA.multiply(10);
+    assertEquals(matrixA, matrixB);
+    matrixA.multiply(0);
+    assertEquals(matrixA, matrixB);
   }
 
   public void testClone() {

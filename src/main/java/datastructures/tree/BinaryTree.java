@@ -47,13 +47,13 @@ public class BinaryTree<T extends Comparable<T>> implements Iterable<T>, Seriali
 
         if ( this.value.compareTo( value ) > 0 ) {
             if ( this.left == null ) {
-                left = new BinaryTree<T>( value );
+                left = new BinaryTree<>( value );
             } else {
                 return this.left.insert( value );
             }
         } else {
             if ( this.right == null ) {
-                right = new BinaryTree<T>( value );
+                right = new BinaryTree<>( value );
             } else {
                 return this.right.insert( value );
             }
@@ -91,11 +91,8 @@ public class BinaryTree<T extends Comparable<T>> implements Iterable<T>, Seriali
                 left.value = null;
                 return leftValue;
             } else {
-                System.out.println("#1");
                 this.value = right.minimum();
-                System.out.println(this.value);
                 right.value = right.remove( this.value );
-                System.out.println(right.value);
             }
         }
 

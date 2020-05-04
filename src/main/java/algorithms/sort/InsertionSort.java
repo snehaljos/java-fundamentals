@@ -1,7 +1,7 @@
 package algorithms.sort;
 
 /**
- * Static implementation of the insertion sort algorigthm
+ * Static implementation of the insertion sort algorithm
  *
  * @author thepn
  */

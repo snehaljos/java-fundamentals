@@ -1,6 +1,7 @@
 algorithms/search/BinarySearchTest.class
 datastructures/math/MatrixTest.class
-datastructures/math/TupleTest.class
 datastructures/tree/BinaryTreeTest.class
+datastructures/math/TupleTest.class
 algorithms/random/listshuffle/FisherYatesTest.class
 algorithms/sort/InsertionSortTest.class
+algorithms/sort/BubbleSortTest.class

@@ -68,12 +68,12 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="datastructures.tree.BinaryTreeTest" name="testSize" time="0.003"/>
+  <testcase classname="datastructures.tree.BinaryTreeTest" name="testSize" time="0.002"/>
   <testcase classname="datastructures.tree.BinaryTreeTest" name="testRemoveRight" time="0"/>
   <testcase classname="datastructures.tree.BinaryTreeTest" name="testInsertAll" time="0"/>
   <testcase classname="datastructures.tree.BinaryTreeTest" name="testRemoveBoth" time="0"/>
   <testcase classname="datastructures.tree.BinaryTreeTest" name="testRemoveLeft" time="0"/>
   <testcase classname="datastructures.tree.BinaryTreeTest" name="testMinimum" time="0"/>
   <testcase classname="datastructures.tree.BinaryTreeTest" name="testIsEmpty" time="0"/>
-  <testcase classname="datastructures.tree.BinaryTreeTest" name="testIterator" time="0"/>
+  <testcase classname="datastructures.tree.BinaryTreeTest" name="testIterator" time="0.001"/>
 </testsuite>

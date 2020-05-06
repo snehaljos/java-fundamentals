@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.29">
+<file name="/Users/pascal/IdeaProjects/java-fundamentals/src/main/java/datastructures/tree/BinaryTree.java">
+</file>
+<file name="/Users/pascal/IdeaProjects/java-fundamentals/src/main/java/datastructures/math/Tuple.java">
+</file>
+<file name="/Users/pascal/IdeaProjects/java-fundamentals/src/main/java/datastructures/math/Matrix.java">
+</file>
+<file name="/Users/pascal/IdeaProjects/java-fundamentals/src/main/java/algorithms/sort/InsertionSort.java">
+</file>
+<file name="/Users/pascal/IdeaProjects/java-fundamentals/src/main/java/algorithms/search/BinarySearch.java">
+</file>
+<file name="/Users/pascal/IdeaProjects/java-fundamentals/src/main/java/algorithms/random/ListShuffle.java">
+</file>
+</checkstyle>

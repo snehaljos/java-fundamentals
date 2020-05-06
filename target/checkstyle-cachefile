@@ -1,0 +1,10 @@
+#Mon May 04 21:43:32 CEST 2020
+module-resource*?\:checkstyle-suppressions.xml=3B8FBD43E3D5435D2218D9D470A5246B8DAE7B42
+/Users/pascal/IdeaProjects/java-fundamentals/src/main/java/algorithms/random/ListShuffle.java=1588621408000
+/Users/pascal/IdeaProjects/java-fundamentals/src/main/java/datastructures/math/Matrix.java=1588617020000
+/Users/pascal/IdeaProjects/java-fundamentals/src/main/java/datastructures/tree/BinaryTree.java=1588620583000
+/Users/pascal/IdeaProjects/java-fundamentals/src/main/java/algorithms/search/BinarySearch.java=1588617020000
+/Users/pascal/IdeaProjects/java-fundamentals/src/main/java/datastructures/math/Tuple.java=1588617020000
+/Users/pascal/IdeaProjects/java-fundamentals/src/main/java/algorithms/sort/InsertionSort.java=1588620601000
+configuration*?=E2F22C0E93EA98D6379EAB25DE4D5903872A4584
+module-resource*?\:checkstyle-xpath-suppressions.xml=C2ECCA7F00AE1DADA13A9DA4FC1F1EED6A6190B5

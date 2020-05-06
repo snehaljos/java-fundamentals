@@ -37,7 +37,7 @@ public class QuickSort {
     T pivot = array[end];
 
     for (int i = start; i < end; i++) {
-      if (array[i].compareTo(pivot) < 0) { // <
+      if (array[i].compareTo(pivot) < 0) {
         T temp = array[start];
         array[start] = array[i];
         array[i] = temp;

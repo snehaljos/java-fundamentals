@@ -32,4 +32,18 @@ public class BinarySearchTest extends TestCase {
     assertEquals(binarySearch.searchFor(300), -1);
   }
 
+  public void testIntegerArrayWithNullValues() {
+    BinarySearch<Integer> binarySearch = new BinarySearch<>(new Integer[]{1, 2, 3, null});
+    try {
+      binarySearch.searchFor(4);
+      fail();
+    } catch (NullPointerException e) {
+    }
+    try {
+      binarySearch.searchFor(null);
+      fail();
+    } catch (IllegalArgumentException e) {
+    }
+  }
+
 }

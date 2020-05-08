@@ -17,13 +17,15 @@ public class TupleTest extends TestCase {
   }
 
   public void testEquals() {
-    final Tuple<Integer> tuple = new Tuple<>(1,2);
-    assertEquals(tuple, new Tuple<>(1, 2));
-    assertNotSame(null, tuple);
-    assertNotSame(tuple, null);
-    assertNotSame(1, tuple);
-    assertNotSame(tuple, 1);
-    assertNotSame(tuple, new Tuple<>(2, 1));
+    final Tuple<Integer> tupleA = new Tuple<>(1,2);
+    assertEquals(tupleA, new Tuple<>(1, 2));
+    assertNotSame(null, tupleA);
+    assertNotSame(tupleA, null);
+    assertNotSame(1, tupleA);
+    assertNotSame(tupleA, 1);
+    assertNotSame(tupleA, new Tuple<>(2, 1));
+    final Tuple tupleB = tupleA.withB(1);
+    assertEquals(tupleB, tupleB);
   }
 
   public void testHashCode() {

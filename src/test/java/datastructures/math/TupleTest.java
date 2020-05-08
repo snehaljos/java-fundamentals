@@ -29,8 +29,8 @@ public class TupleTest extends TestCase {
   }
 
   public void testHashCode() {
-    assertEquals(new Tuple<>("a", "b"), new Tuple<>("a", "b"));
-    assertNotSame(new Tuple<>("a", "b"), new Tuple<>("b", "a"));
+    assertEquals(new Tuple<>("a", "b").hashCode(), new Tuple<>("a", "b").hashCode());
+    assertNotSame(new Tuple<>("a", "b").hashCode(), new Tuple<>("b", "a").hashCode());
   }
 
   public void testToString() {

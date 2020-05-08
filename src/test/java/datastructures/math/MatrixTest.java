@@ -1,5 +1,6 @@
 package datastructures.math;
 
+import java.util.Arrays;
 import junit.framework.TestCase;
 
 /**
@@ -70,6 +71,76 @@ public class MatrixTest extends TestCase {
     assertNotSame(matrixA, matrixB);
     matrixB.add(matrixB);
     assertEquals(matrixA, matrixB);
+  }
+
+  public void testArgumentExceptions() {
+    final int[][] invalidMatrixArray = new int[][]{{1, 2}, {1}};
+    final int[][] validMatrixArray = new int[][]{{1, 2}, {1, 2}, {1, 2}};
+    try {
+      new Matrix(null);
+      fail();
+    } catch (IllegalArgumentException ignored) {
+    }
+    try {
+      new Matrix(invalidMatrixArray);
+      fail();
+    } catch (IllegalArgumentException ignored) {
+    }
+    final Matrix validMatrix = new Matrix(validMatrixArray);
+    assertTrue(Arrays.deepEquals(validMatrix.getAsArray(), validMatrixArray));
+    try {
+      Matrix.isValidMatrix(null);
+      fail();
+    } catch (IllegalArgumentException ignored) {
+    }
+    try {
+      validMatrix.getValueAtCoordinates(null);
+      fail();
+    } catch (IllegalArgumentException ignored) {
+    }
+    try {
+      validMatrix.getValueAtCoordinates(validMatrix.getMatrixDimensions());
+      fail();
+    } catch (IllegalArgumentException ignored) {
+    }
+    assertEquals(validMatrix.getValueAtCoordinates(new Tuple<>(1, 1)), 2);
+    try {
+      validMatrix.add(null);
+      fail();
+    } catch (IllegalArgumentException ignored) {
+    }
+    final Matrix transposedMatrix = validMatrix.clone();
+    transposedMatrix.transpose();
+    try {
+      validMatrix.add(transposedMatrix);
+      fail();
+    } catch (IllegalArgumentException ignored) {
+    }
+    try {
+      validMatrix.add(null);
+      fail();
+    } catch (IllegalArgumentException ignored) {
+    }
+    try {
+      validMatrix.multiply(validMatrix);
+      fail();
+    } catch (IllegalArgumentException ignored) {
+    }
+  }
+
+  public void testToString() {
+    final Matrix matrix = new Matrix(new int[][]{{1,3},{3,4}});
+    assertEquals("Matrix{array=[[1, 3], [3, 4]]}", matrix.toString() );
+  }
+
+  public void testEqualsAndHashCode() {
+    final int[][] validMatrixArray = new int[][]{{1, 2}, {1, 2}, {1, 2}};
+    final Matrix matrixA = new Matrix(validMatrixArray);
+    final Matrix matrixB = matrixA.clone();
+    assertEquals(matrixA, matrixB);
+    assertEquals(matrixA, matrixA);
+    assertNotSame(null, matrixA);
+    assertEquals(matrixA.hashCode(), matrixB.hashCode());
   }
 
 }

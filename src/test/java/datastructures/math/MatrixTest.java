@@ -126,6 +126,11 @@ public class MatrixTest extends TestCase {
       fail();
     } catch (IllegalArgumentException ignored) {
     }
+    try {
+      validMatrix.multiply(null);
+      fail();
+    } catch (IllegalArgumentException ignored) {
+    }
   }
 
   public void testToString() {

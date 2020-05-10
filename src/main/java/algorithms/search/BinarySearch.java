@@ -3,7 +3,7 @@ package algorithms.search;
 /**
  * Provides a simple implementation of binary-search based on a sorted array. To use binary-search
  * on an array, instantiate an object of this class using {@link BinarySearch#BinarySearch(Comparable[])}
- * and then call {@link BinarySearch#searchFor(Comparable)} on this object. This method is
+ * and then call {@link BinarySearch#searchIteratively(Comparable)} on this object. This method is
  * non-destructive, which means that you can call the method multiple times on the same array.
  *
  * @param <E> specifies the type of which the array used in the binary search is
@@ -39,7 +39,7 @@ public class BinarySearch<E extends Comparable<? super E>> {
    *               null
    * @return index of {@code target} in {@link BinarySearch#array}, -1 if not found
    */
-  public int searchFor(final E target) {
+  public int searchIteratively(final E target) {
     if (target == null) {
       throw new IllegalArgumentException("Parameter target most not be null");
     }
@@ -61,6 +61,37 @@ public class BinarySearch<E extends Comparable<? super E>> {
         case -1:
           rightBoundary = middleIndex - 1;
           break;
+        default:
+          //do nothing - this should not happen
+      }
+    }
+    return -1;
+  }
+
+  /**
+   * @param leftBoundary  the left boundary of the interval in which should be searched
+   * @param rightBoundary the right boundary of the interval in which should be searched
+   * @param target        the value for which should be searched in {@link BinarySearch#array}, must
+   *                      not be null
+   * @return index of {@code target} in {@link BinarySearch#array}, -1 if not found
+   */
+  public int searchRecursively(final int leftBoundary, final int rightBoundary, final E target) {
+    if (target == null) {
+      throw new IllegalArgumentException("Parameter target most not be null");
+    }
+    if (leftBoundary <= rightBoundary) {
+      int span = rightBoundary - leftBoundary;
+      if (PREFER_RIGHT && span % 2 == 0) {
+        span++;
+      }
+      final int middleIndex = leftBoundary + (span / 2);
+      switch (Integer.signum(target.compareTo(array[middleIndex]))) {
+        case 0:
+          return middleIndex;
+        case 1:
+          return searchRecursively(middleIndex + 1, rightBoundary, target);
+        case -1:
+          return searchRecursively(leftBoundary, middleIndex - 1, target);
         default:
           //do nothing - this should not happen
       }

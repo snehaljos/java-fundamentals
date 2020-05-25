@@ -14,6 +14,7 @@ public class ListShuffle {
 
   /**
    * Using the fisher yates algorithm to shuffle a list
+   *
    * @param <T>
    * @param list
    */
@@ -32,4 +33,23 @@ public class ListShuffle {
 
   }
 
+  /**
+   * Using the fisher yates algorithm to shuffle a list
+   *
+   * @param <T>
+   * @param list
+   */
+  public static <T> void fisherYatesShuffle(T[] list) {
+    final Random random = new Random();
+
+    T temp;
+    int size = list.length;
+
+    for (int i = 0; i < size; i++) {
+      int index = i + (int) (random.nextDouble() * (size - i));
+      temp = list[index];
+      list[index] = list[i];
+      list[i] = temp;
+    }
+  }
 }

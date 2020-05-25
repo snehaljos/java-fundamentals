@@ -1,2 +1,9 @@
 language: java
-script: mvn clean verify
+sudo: false
+script: "mvn cobertura:cobertura"
+
+jdk:
+  - openjdk8
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

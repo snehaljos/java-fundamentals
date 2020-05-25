@@ -207,6 +207,6 @@ public class Matrix {
 
   @Override
   public int hashCode() {
-    return Arrays.hashCode(array);
+    return Arrays.deepHashCode(array);
   }
 }

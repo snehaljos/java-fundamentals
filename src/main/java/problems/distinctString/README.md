@@ -16,7 +16,7 @@ dependent on the length of the input.
 
 ### Sorting
 Sort the characters of the String based on their ascii-value.
-After that iterate over the String and compare each character with it right neighbour.
+After that iterate over the String and compare each character with its subsequent neighbour.
 
 Time Complexity: `O(n log n)` because we need `n log n` amount of time to sort the array and `n` to iterate
 once over the array after the sorting.

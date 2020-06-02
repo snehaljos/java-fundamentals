@@ -2,7 +2,7 @@
 ## Problem statement
 Given a String return if it contains duplicate characters.
 
-### Additional Constrains
+### Additional constraints
 The String contains only lowercase latin characters `[a-z]` and is not null.
 
 ## Solutions

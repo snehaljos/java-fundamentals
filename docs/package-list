@@ -1,5 +1,8 @@
 algorithms.random
 algorithms.search
 algorithms.sort
+datastructures.list
 datastructures.math
 datastructures.tree
+problems.distinctString
+problems.distinctString.impl

@@ -1,6 +1,7 @@
 algorithms.random
 algorithms.search
 algorithms.sort
+datastructures.heap
 datastructures.list
 datastructures.math
 datastructures.tree

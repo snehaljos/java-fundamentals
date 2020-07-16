@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * A max heap based on an array list. This max heap can also be used as a max-priority queue
- * using MaxArrayHeap{@link #add(Comparable)} and MaxArrayHeap{@link #pop()}
+ * A max heap based on an array list. This max heap can also be used as a max-priority queue using
+ * MaxArrayHeap{@link #add(Comparable)} and MaxArrayHeap{@link #pop()}
  *
  * @param <E> specifies the type of elements the max heap contains
  * @author thepn
@@ -183,7 +183,7 @@ public class MaxArrayHeap<E extends Comparable<? super E>> {
       return null;
     }
 
-    E element = list.get(0);
+    final E element = list.get(0);
 
     // sets the first list element to the last one
     list.set(0, list.get(list.size() - 1));
@@ -197,8 +197,8 @@ public class MaxArrayHeap<E extends Comparable<? super E>> {
   /**
    * Removes an element from the heap and rebuilds the max heap.
    *
-   * @return <tt>true</tt> if this heap contained the specified element
    * @param element
+   * @return <tt>true</tt> if this heap contained the specified element
    */
   public boolean remove(E element) {
     boolean removed = list.remove(element);

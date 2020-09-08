@@ -5,5 +5,7 @@ datastructures.heap
 datastructures.list
 datastructures.math
 datastructures.tree
+problems.coinsamount
+problems.coinsamount.impl
 problems.distinctString
 problems.distinctString.impl

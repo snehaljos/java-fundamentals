@@ -84,7 +84,7 @@ public class MaxArrayHeapTest extends TestCase {
 
     int result = maxArrayHeap.rightChild(0);
 
-    assertEquals(2, result);
+    assertEquals(6, result);
 
     result = maxArrayHeap.rightChild(1);
     assertEquals(4, result);

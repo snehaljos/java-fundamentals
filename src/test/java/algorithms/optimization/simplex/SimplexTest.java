@@ -14,11 +14,23 @@ public class SimplexTest extends TestCase {
         .addConstraint(26, 3, 2, 1)
         .build();
 
+    runTableauTest(tableau, -52.0D);
+
+    tableau = new TableauBuilder().addObjectFunctionCoefficients(-30, 10, -15)
+        .addConstraint(105, 1, -1, 0)
+        .addConstraint(110, 1, 0, 5)
+        .addConstraint(75, 0, 5, -1)
+        .build();
+
+    runTableauTest(tableau, -3250.0D);
+  }
+
+  private void runTableauTest(Tableau tableau, double objValue) {
     assertTrue(tableau.isFeasible());
 
     double result = tableau.solve();
 
-    assertEquals(-52.0, result);
+    assertEquals(objValue, result);
     assertEquals(-1, tableau.isOptimal());
   }
 

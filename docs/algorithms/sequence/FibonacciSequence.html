@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9};
+var methods = {"i0":9,"i1":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li>Next&nbsp;Class</li>
+<li><a href="../../algorithms/sequence/FibonacciSequenceTest.html" title="class in algorithms.sequence"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?algorithms/sequence/FibonacciSequence.html" target="_top">Frames</a></li>
@@ -151,7 +151,13 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../algorithms/sequence/FibonacciSequence.html#fibonacci-int-">fibonacci</a></span>(int&nbsp;n)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../algorithms/sequence/FibonacciSequence.html#iterative-int-">iterative</a></span>(int&nbsp;n)</code>
+<div class="block">Return the number in n position in Fibonacci Sequence (iterative)</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../algorithms/sequence/FibonacciSequence.html#recursive-int-">recursive</a></span>(int&nbsp;n)</code>
 <div class="block">Return the number in n position in Fibonacci Sequence (recursive)</div>
 </td>
 </tr>
@@ -194,14 +200,30 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="fibonacci-int-">
+<a name="recursive-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>recursive</h4>
+<pre>public static&nbsp;int&nbsp;recursive(int&nbsp;n)</pre>
+<div class="block">Return the number in n position in Fibonacci Sequence (recursive)</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the position in Fibonacci Sequence</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the number in postion n, if n is 0 or negative will return -1</dd>
+</dl>
+</li>
+</ul>
+<a name="iterative-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>fibonacci</h4>
-<pre>public static&nbsp;int&nbsp;fibonacci(int&nbsp;n)</pre>
-<div class="block">Return the number in n position in Fibonacci Sequence (recursive)</div>
+<h4>iterative</h4>
+<pre>public static&nbsp;int&nbsp;iterative(int&nbsp;n)</pre>
+<div class="block">Return the number in n position in Fibonacci Sequence (iterative)</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>n</code> - the position in Fibonacci Sequence</dd>
@@ -238,7 +260,7 @@ extends java.lang.Object</pre>
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li>Next&nbsp;Class</li>
+<li><a href="../../algorithms/sequence/FibonacciSequenceTest.html" title="class in algorithms.sequence"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?algorithms/sequence/FibonacciSequence.html" target="_top">Frames</a></li>

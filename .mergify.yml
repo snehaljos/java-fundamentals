@@ -1,7 +1,8 @@
 pull_request_rules:
   - name: automatic merge for master when reviewed by owner
     conditions:
-      - status-success=continuous-integration/travis-ci/pr
+      - "status-success=Travis CI - Pull Request"
+      - "status-success=ci/circleci: test"
       - approved-reviews-by=LorenzNickel
       - base=master
     actions:
@@ -20,9 +21,8 @@ pull_request_rules:
         message: This pull request is now in conflicts. Could you fix it? 🙏
   - name: automatic merge for Dependabot pull requests with label
     conditions:
-      - approved-reviews-by=LorenzNickel
       - author~=^dependabot(|-preview)\[bot\]$
-      - status-success=continuous-integration/travis-ci/pr
+      - "status-success=Travis CI - Pull Request"
       - "status-success=ci/circleci: test"
     actions:
       merge:

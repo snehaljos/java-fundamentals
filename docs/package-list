@@ -18,6 +18,7 @@ datastructures.pair
 datastructures.tree
 pattern.adapter
 pattern.composite
+pattern.singleton
 problems.checkSubTree
 problems.checkSubTree.impl
 problems.checkSubTree.resources

@@ -11,6 +11,11 @@ public class EuclideanTest extends TestCase {
     assertEquals(100, Euclidean.gcd(500,100));
     assertEquals(15, Euclidean.gcd(3690,285));
     assertEquals(12, Euclidean.gcd(492,12));
+
+    assertEquals(12, Euclidean.gcdIterative(348,156));
+    assertEquals(100, Euclidean.gcdIterative(500,100));
+    assertEquals(15, Euclidean.gcdIterative(3690,285));
+    assertEquals(12, Euclidean.gcdIterative(492,12));
   }
 
 }

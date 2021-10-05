@@ -29,7 +29,7 @@ public class Euclidean {
    * @return greatest common divisor
    */
   public static int gcdIterative(int a, int b) {
-    while(b != 0) {
+    while (b != 0) {
       int temp = b;
       b = a % b;
       a = temp;

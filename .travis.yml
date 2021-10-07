@@ -1,6 +1,6 @@
 language: java
 sudo: false
-script: "mvn cobertura:cobertura"
+script: "mvn test"
 
 jdk:
   - openjdk8

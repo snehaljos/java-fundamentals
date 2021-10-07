@@ -1,6 +1,5 @@
-package algorithms.strings;
+package algorithms.string;
 
-import algorithms.string.LongestCommonSubString;
 import junit.framework.TestCase;
 
 /**

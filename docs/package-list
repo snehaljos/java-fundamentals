@@ -10,7 +10,6 @@ algorithms.search.astar.model
 algorithms.sequence
 algorithms.sort
 algorithms.string
-algorithms.strings
 datastructures.heap
 datastructures.list
 datastructures.math

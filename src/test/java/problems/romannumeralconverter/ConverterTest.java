@@ -1,9 +1,9 @@
-package problems.romanNumeralConverter;
+package problems.romannumeralconverter;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
-import problems.romanNumeralConverter.impl.Converter;
+import problems.romannumeralconverter.impl.Converter;
 
 public class ConverterTest {
 

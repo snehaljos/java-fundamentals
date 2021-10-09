@@ -1,8 +1,8 @@
-package problems.romanNumeralConverter.impl;
+package problems.romannumeralconverter.impl;
 
 import java.util.HashMap;
 
-public class Converter implements problems.romanNumeralConverter.RomanNumeralConverter {
+public class Converter implements problems.romannumeralconverter.RomanNumeralConverter {
 
   HashMap<Character, Integer> romans;
 

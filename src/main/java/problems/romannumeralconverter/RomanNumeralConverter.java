@@ -1,4 +1,4 @@
-package problems.romanNumeralConverter;
+package problems.romannumeralconverter;
 
 public interface RomanNumeralConverter {
 

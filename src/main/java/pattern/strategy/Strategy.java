@@ -7,7 +7,7 @@ package pattern.strategy;
  * @author Labnann
  */
 public interface Strategy {
-    int runAlgorithm();
+  int runAlgorithm();
 }
 
 

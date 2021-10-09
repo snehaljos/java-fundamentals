@@ -1,5 +1,9 @@
 package pattern.strategy;
 
+
+/**
+ * @author Labnann
+ */
 public class ConcreteStrategy1 implements Strategy {
 
   @Override

@@ -19,12 +19,12 @@ pattern.composite
 pattern.singleton
 problems.anagram
 problems.anagram.impl
-problems.checkSubTree
-problems.checkSubTree.impl
-problems.checkSubTree.resources
+problems.checksubtree
+problems.checksubtree.impl
+problems.checksubtree.resources
 problems.coinsamount
 problems.coinsamount.impl
 problems.distinctString
 problems.distinctString.impl
-problems.romanNumeralConverter
-problems.romanNumeralConverter.impl
+problems.romannumeralconverter
+problems.romannumeralconverter.impl

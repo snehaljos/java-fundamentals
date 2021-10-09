@@ -1,4 +1,4 @@
-package problems.checkSubTree.resources;
+package problems.checksubtree.resources;
 
 public class TreeNode {
   public int val;

@@ -1,8 +1,8 @@
-package problems.checkSubTree.impl;
+package problems.checksubtree.impl;
 
 
-import problems.checkSubTree.CheckSubTree;
-import problems.checkSubTree.resources.TreeNode;
+import problems.checksubtree.CheckSubTree;
+import problems.checksubtree.resources.TreeNode;
 
 public class Recursive implements CheckSubTree {
   @Override

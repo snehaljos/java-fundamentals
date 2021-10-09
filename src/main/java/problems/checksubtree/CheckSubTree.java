@@ -1,7 +1,7 @@
-package problems.checkSubTree;
+package problems.checksubtree;
 
 
-import problems.checkSubTree.resources.TreeNode;
+import problems.checksubtree.resources.TreeNode;
 
 public interface CheckSubTree {
   boolean isSubTree(TreeNode s, TreeNode t);

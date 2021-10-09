@@ -1,8 +1,8 @@
-package problems.checkSubTree;
+package problems.checksubtree;
 
 import junit.framework.TestCase;
-import problems.checkSubTree.impl.Recursive;
-import problems.checkSubTree.resources.TreeNode;
+import problems.checksubtree.impl.Recursive;
+import problems.checksubtree.resources.TreeNode;
 
 public class CheckSubTreeTest extends TestCase {
   // function to create a tree for testing

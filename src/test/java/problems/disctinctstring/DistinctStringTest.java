@@ -1,4 +1,4 @@
-package problems.disctinctString;
+package problems.disctinctstring;
 
 import junit.framework.TestCase;
 import problems.distinctString.DistinctString;

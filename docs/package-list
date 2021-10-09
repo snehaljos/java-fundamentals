@@ -3,6 +3,7 @@ algorithms.math
 algorithms.optimization.simplex
 algorithms.optimization.simplex.impl
 algorithms.random
+algorithms.random.listshuffle
 algorithms.search
 algorithms.search.astar
 algorithms.search.astar.model
@@ -17,13 +18,12 @@ datastructures.tree
 pattern.adapter
 pattern.composite
 pattern.singleton
-problems.anagram
-problems.anagram.impl
 problems.checkSubTree
 problems.checkSubTree.impl
 problems.checkSubTree.resources
 problems.coinsamount
 problems.coinsamount.impl
+problems.disctinctString
 problems.distinctString
 problems.distinctString.impl
 problems.romanNumeralConverter

@@ -36,7 +36,7 @@ public class ListShuffle {
   /**
    * Using the fisher yates algorithm to shuffle a list
    *
-   * @param <T> </T> The type of the list
+   * @param <T> The type of the list
    * @param list The array that should be shuffled
    */
   public static <T> void fisherYatesShuffle(T[] list) {

@@ -25,7 +25,7 @@ Please add JUnit tests to cover your changes within the [test package](https://g
 
 ### Documentation
 
-Please make sure to document your code using javadoc if it's not instantly clear what some part does. From time to time we will also upload a "documentation" for the project based on the javadoc to <https://lorenznickel.github.io/java-fundamentals/>. Creating the javadoc within the [docs folder](https://github.com/LorenzNickel/java-fundamentals/tree/master/docs) is a process we automated using a [GitHub-Action](https://github.com/LorenzNickel/java-fundamentals/blob/main/.github/workflows/javadoc-generator.yml), so you don't need to do that manually.<br />
+Please make sure to document your code using javadoc if it's not instantly clear what some part does. From time to time we will also upload a "documentation" for the project based on the javadoc to <https://lorenznickel.github.io/java-fundamentals/>. Creating the javadoc within the [docs folder](https://github.com/LorenzNickel/java-fundamentals/tree/master/docs) is a process we automated using a [GitHub-Action](https://github.com/LorenzNickel/java-fundamentals/blob/master/.github/workflows/javadoc-generator.yml), so you don't need to do that manually.<br />
 Consider also adding some markdown files to cover more complicated concepts which can not be expressed easily within javadoc (e.g. the description of a problem statement or a efficency analysis).
 
 ### Status checks

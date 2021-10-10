@@ -35,7 +35,7 @@ public class BinaryTree<T extends Comparable<T>> implements Iterable<T>, Seriali
   /**
    * Inserts an element in the proper subtree. Duplicates will not be inserted.
    *
-   * @param value
+   * @param value The value that should be inserted into the tree
    * @return true if an element was inserted.
    */
   public boolean insert(T value) {
@@ -86,7 +86,7 @@ public class BinaryTree<T extends Comparable<T>> implements Iterable<T>, Seriali
   /**
    * Removes the element value from the tree
    *
-   * @param value
+   * @param value The value that should be removed from the tree
    * @return the deleted element
    */
   public T remove(T value) {

@@ -11,7 +11,7 @@ public class PalindromeCheck {
 
   /**
    * Checks if a string is a palindrome. The algorithm runs in O(n).
-   * @param input
+   * @param input The input that should be checked
    * @return true if input string is a palindrome
    */
   public boolean isPalindrome(String input) {

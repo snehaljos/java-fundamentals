@@ -11,7 +11,7 @@ package algorithms.search;
  * than the element to be found, we perform m-1 comparisons more for linear search.
  * Therefore the total number of comparisons worst case will be ((n/m) + m-1)
  *
- * @param <E>
+ * @param <E> The type of the array
  */
 public class JumpSearch <E extends Comparable<? super E>> {
 

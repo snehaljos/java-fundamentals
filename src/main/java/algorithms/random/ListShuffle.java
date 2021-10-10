@@ -15,8 +15,8 @@ public class ListShuffle {
   /**
    * Using the fisher yates algorithm to shuffle a list
    *
-   * @param <T>
-   * @param list
+   * @param <T> The type of the list
+   * @param list The list that should be shuffled
    */
   public static <T> void fisherYatesShuffle(final List<T> list) {
     final Random random = new Random();
@@ -36,8 +36,8 @@ public class ListShuffle {
   /**
    * Using the fisher yates algorithm to shuffle a list
    *
-   * @param <T>
-   * @param list
+   * @param <T> </T> The type of the list
+   * @param list The array that should be shuffled
    */
   public static <T> void fisherYatesShuffle(T[] list) {
     final Random random = new Random();

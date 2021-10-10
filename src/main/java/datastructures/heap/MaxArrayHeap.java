@@ -197,7 +197,7 @@ public class MaxArrayHeap<E extends Comparable<? super E>> {
   /**
    * Removes an element from the heap and rebuilds the max heap.
    *
-   * @param element
+   * @param element The element that should be removed from the heap
    * @return <tt>true</tt> if this heap contained the specified element
    */
   public boolean remove(E element) {

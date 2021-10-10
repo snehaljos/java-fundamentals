@@ -35,7 +35,7 @@ public class SinglyLinkedList<E> {
   /**
    * Add an element to the list.
    *
-   * @param element
+   * @param element The element that should be appended to the list
    */
   public void add(E element) {
     Node node = new Node(element);
@@ -46,7 +46,7 @@ public class SinglyLinkedList<E> {
   /**
    * Remove an element from the list.
    *
-   * @param element
+   * @param element The element that should be removed from the list
    * @return if the element was found within the list
    */
   public boolean remove(E element) {
@@ -87,7 +87,7 @@ public class SinglyLinkedList<E> {
   }
 
   /**
-   * @param element
+   * @param element The element that should be checked
    * @return if the list contains the element at least once
    */
   public boolean contains(E element) {

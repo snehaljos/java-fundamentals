@@ -1,0 +1,25 @@
+name: Javadoc Generator
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+jobs:
+  re-generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-java@v2
+        with:
+          distribution: "temurin"
+          java-version: "8"
+      - name: Delete javadoc
+        run: |
+          rm -r ${{ github.workspace }}/docs
+      - name: Generate new javadoc
+        run: |
+          javadoc -d ${{ github.workspace }}/docs -sourcepath ${{ github.workspace }}/src/main/java -subpackages . -windowtitle "java-fundamentals documentation" -notimestamp
+      - name: Commit and push if changes are detected
+        run: |
+          git config --global user.name 'Javadoc-Generator'
+          git config --global user.email 'LorenzNickel@users.noreply.github.com'
+          if [[ `git status --porcelain` ]]; then echo "Uploading changes" && git add . && git commit -am "Re-generate javadoc for ${{ github.sha }}" -m "run-id: ${{ github.run_id }}" -m "run-number ${{ github.run_number }}" -m "run-attempt ${{ github.run_attempt }}" && git push; else echo "No changes to docs detected";fi

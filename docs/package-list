@@ -17,6 +17,7 @@ datastructures.tree
 pattern.adapter
 pattern.composite
 pattern.singleton
+pattern.strategy
 problems.anagram
 problems.anagram.impl
 problems.checksubtree

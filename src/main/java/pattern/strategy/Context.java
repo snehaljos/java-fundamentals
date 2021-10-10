@@ -5,7 +5,7 @@ package pattern.strategy;
  * Note that the Context is independent
  * It does not know which algorithm is going to run
  * @author Labnann
- * */
+ */
 
 public class Context {
   private Strategy strategy;
@@ -14,7 +14,7 @@ public class Context {
     this.strategy = strategy;
   }
 
-  int executeStrategy(){
+  int executeStrategy() {
     return strategy.runAlgorithm();
   }
 }

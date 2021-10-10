@@ -9,14 +9,16 @@ import junit.framework.TestCase;
 public class StrategyTest extends TestCase {
 
   public void test() {
-    Strategy strategy = new ConcreteStrategy1();
-    assertEquals(1,strategy.runAlgorithm());
+    Context context = new Context();
 
-    strategy = new ConcreteStrategy2();
-    assertEquals(2,strategy.runAlgorithm());
+    context.setStrategy(new ConcreteStrategy1());
+    assertEquals(1, context.executeStrategy());
 
-    strategy = new ConcreteStrategy3();
-    assertEquals(3,strategy.runAlgorithm());
+    context.setStrategy(new ConcreteStrategy2());
+    assertEquals(2, context.executeStrategy());
+
+    context.setStrategy(new ConcreteStrategy3());
+    assertEquals(3, context.executeStrategy());
 
   }
 }

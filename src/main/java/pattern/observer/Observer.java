@@ -5,13 +5,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 interface Observer {
-  void update(SubjectDataFormat data);
+
+  void update(Data data);
+
+  Data getData();
 }
 
 
 class Subject {
 
-  int data;
+  Data data;
 
   List<Observer> observers = new ArrayList<>();
 
@@ -25,23 +28,24 @@ class Subject {
   }
 
 
-  void setData(int data) {
+  void setData(Data data) {
     this.data = data;
     notifyObserver();
   }
 
 
   private void notifyObserver() {
-    observers.forEach(observer -> observer.update(new SubjectDataFormat(data)));
+    observers.forEach(observer -> observer.update(data));
   }
 
 }
 
 
-class SubjectDataFormat {
+class Data {
+
   int data;
 
-  SubjectDataFormat(int data){
+  Data(int data) {
     this.data = data;
   }
 
@@ -53,16 +57,16 @@ class SubjectDataFormat {
 
 class ConcreteObserver implements Observer {
 
-  String description = "observer 1: ";
-  int observerData;
+
+  Data observerData = null;
 
   @Override
-  public void update(SubjectDataFormat data) {
-    this.observerData = data.getData();
+  public void update(Data data) {
+    this.observerData = data;
   }
 
-  public int getObserverData() {
-    return observerData;
+  public Data getData() {
+    return this.observerData;
   }
 }
 

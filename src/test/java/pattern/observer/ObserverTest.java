@@ -2,6 +2,10 @@ package pattern.observer;
 
 import junit.framework.TestCase;
 
+/**
+ * @author Labnann
+ */
+
 
 public class ObserverTest extends TestCase {
 

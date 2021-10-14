@@ -1,5 +1,11 @@
 package pattern.observer;
 
+/**
+ * An implementation of the Observer interface
+ *
+ * @author Labnann
+ */
+
 public class ConcreteObserver implements Observer {
 
 

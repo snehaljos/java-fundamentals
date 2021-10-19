@@ -28,5 +28,6 @@ problems.coinsamount
 problems.coinsamount.impl
 problems.distinctString
 problems.distinctString.impl
+problems.longestconsecstring.impl
 problems.romannumeralconverter
 problems.romannumeralconverter.impl

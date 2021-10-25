@@ -4,24 +4,28 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CareTaker {
-  List<Originator.Memento> savedStates = new ArrayList<>();
+  private List<Originator.Memento> savedStates = new ArrayList<>();
 
-  Originator originator = new Originator("");
+  private Originator originator = new Originator("");
 
-  void write(String string){
+  public void write(String string){
     originator.setState(string);
   }
 
-  String read(){
+  public String read(){
     return originator.getState();
   }
 
-  void save(){
+  public void save(){
     savedStates.add(originator.saveToMemento());
   }
 
-  void restore(int stateNumber){
+  public void load(int stateNumber){
     originator.restoreFromMemento(savedStates.get(stateNumber));
+  }
+
+  public int getStateCount(){
+    return this.savedStates.size();
   }
 
 }

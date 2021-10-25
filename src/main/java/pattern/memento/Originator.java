@@ -3,7 +3,7 @@ package pattern.memento;
 
 
 public class Originator {
-  String state;
+  private String state;
 
   Originator(String state){
     this.state = state;

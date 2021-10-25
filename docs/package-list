@@ -16,6 +16,7 @@ datastructures.pair
 datastructures.tree
 pattern.adapter
 pattern.composite
+pattern.memento
 pattern.observer
 pattern.singleton
 pattern.strategy

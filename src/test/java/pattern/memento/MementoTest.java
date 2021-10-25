@@ -4,7 +4,7 @@ import junit.framework.TestCase;
 
 public class MementoTest extends TestCase {
   public void test(){
-    CareTaker careTaker = new CareTaker();
+    Caretaker careTaker = new Caretaker();
 
     assertEquals(0, careTaker.getStateCount());
 

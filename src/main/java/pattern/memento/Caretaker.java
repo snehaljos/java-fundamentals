@@ -3,7 +3,13 @@ package pattern.memento;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CareTaker {
+/**
+ * Caretaker class: The class that handles the save and load of Originator
+ *
+ * @author Labnann
+ */
+
+public class Caretaker {
   private final List<Originator.Memento> savedStates = new ArrayList<>();
   private final Originator originator = new Originator("");
 

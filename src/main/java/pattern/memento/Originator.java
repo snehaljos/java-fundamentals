@@ -1,6 +1,11 @@
 package pattern.memento;
 
 
+/**
+ * Originator class: The class whose state is to be saved
+ *
+ * @author Labnann
+ */
 
 public class Originator {
   private String state;

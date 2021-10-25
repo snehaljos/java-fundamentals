@@ -1,0 +1,20 @@
+name: Javadoc Generator (check-only)
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
+jobs:
+  re-generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-java@v2
+        with:
+          distribution: "temurin"
+          java-version: "8"
+      - name: Delete javadoc
+        run: |
+          rm -r ${{ github.workspace }}/docs
+      - name: Generate new javadoc
+        run: |
+          javadoc -d ${{ github.workspace }}/docs -sourcepath ${{ github.workspace }}/src/main/java -subpackages . -windowtitle "java-fundamentals documentation" -notimestamp

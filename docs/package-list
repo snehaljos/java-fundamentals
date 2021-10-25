@@ -16,6 +16,7 @@ datastructures.pair
 datastructures.tree
 pattern.adapter
 pattern.composite
+pattern.observer
 pattern.singleton
 pattern.strategy
 problems.anagram
@@ -27,5 +28,6 @@ problems.coinsamount
 problems.coinsamount.impl
 problems.distinctString
 problems.distinctString.impl
+problems.longestconsecstring.impl
 problems.romannumeralconverter
 problems.romannumeralconverter.impl

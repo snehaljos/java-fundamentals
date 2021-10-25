@@ -4,9 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CareTaker {
-  private List<Originator.Memento> savedStates = new ArrayList<>();
-
-  private Originator originator = new Originator("");
+  private final List<Originator.Memento> savedStates = new ArrayList<>();
+  private final Originator originator = new Originator("");
 
   public void write(String string){
     originator.setState(string);

@@ -5,11 +5,11 @@ package pattern.memento;
 public class Originator {
   private String state;
 
-  Originator(String state){
+  Originator(String state) {
     this.state = state;
   }
 
-  void setState(String state){
+  void setState(String state) {
     this.state = state;
   }
 
@@ -17,23 +17,23 @@ public class Originator {
     return state;
   }
 
-  public Memento saveToMemento(){
+  public Memento saveToMemento() {
     return new Memento(this.state);
   }
 
-  public void restoreFromMemento(Memento memento){
+  public void restoreFromMemento(Memento memento) {
     this.state = memento.getState();
   }
 
 
-  static class Memento{
+  static class Memento {
     String stateData;
 
-    Memento(String state){
+    Memento(String state) {
       this.stateData = state;
     }
 
-    String getState(){
+    String getState() {
       return this.stateData;
     }
 

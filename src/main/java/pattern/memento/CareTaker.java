@@ -7,23 +7,23 @@ public class CareTaker {
   private final List<Originator.Memento> savedStates = new ArrayList<>();
   private final Originator originator = new Originator("");
 
-  public void write(String string){
+  public void write(String string) {
     originator.setState(string);
   }
 
-  public String read(){
+  public String read() {
     return originator.getState();
   }
 
-  public void save(){
+  public void save() {
     savedStates.add(originator.saveToMemento());
   }
 
-  public void load(int stateNumber){
+  public void load(int stateNumber) {
     originator.restoreFromMemento(savedStates.get(stateNumber));
   }
 
-  public int getStateCount(){
+  public int getStateCount() {
     return this.savedStates.size();
   }
 

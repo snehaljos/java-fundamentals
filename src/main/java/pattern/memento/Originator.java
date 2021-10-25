@@ -8,17 +8,14 @@ package pattern.memento;
  */
 
 public class Originator {
-  private String state;
+  private String state = "";
 
-  Originator(String state) {
+
+  void write(String state) {
     this.state = state;
   }
 
-  void setState(String state) {
-    this.state = state;
-  }
-
-  public String getState() {
+  public String read() {
     return state;
   }
 

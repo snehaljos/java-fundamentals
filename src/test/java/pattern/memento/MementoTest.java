@@ -3,32 +3,32 @@ package pattern.memento;
 import junit.framework.TestCase;
 
 public class MementoTest extends TestCase {
-  public void test(){
-    Caretaker careTaker = new Caretaker();
 
-    assertEquals(0, careTaker.getStateCount());
+  public void test() {
 
-    careTaker.write("Hello");
-    assertEquals("Hello", careTaker.read());
-    careTaker.save();
-    assertEquals(1, careTaker.getStateCount());
+    Originator originator = new Originator();
+    Caretaker caretaker = new Caretaker(originator);
 
-    careTaker.write("Hello World");
-    assertEquals("Hello World", careTaker.read());
-    assertEquals(1, careTaker.getStateCount());
-    careTaker.save();
-    assertEquals(2, careTaker.getStateCount());
+    assertEquals(0, caretaker.getStateCount());
 
-    careTaker.load(0);
-    assertEquals("Hello", careTaker.read());
-    assertEquals(2, careTaker.getStateCount());
+    originator.write("Hello");
+    assertEquals("Hello", originator.read());
+    caretaker.save();
+    assertEquals(1, caretaker.getStateCount());
+
+    originator.write("Hello World");
+    assertEquals("Hello World", originator.read());
+    caretaker.save();
+    assertEquals(2, caretaker.getStateCount());
 
 
-    careTaker.load(1);
-    assertEquals("Hello World", careTaker.read());
-    assertEquals(2, careTaker.getStateCount());
+    caretaker.load(0);
+    assertEquals("Hello", originator.read());
+    assertEquals(2, caretaker.getStateCount());
 
 
-
+    caretaker.load(1);
+    assertEquals("Hello World", originator.read());
+    assertEquals(2, caretaker.getStateCount());
   }
 }

@@ -11,14 +11,10 @@ import java.util.List;
 
 public class Caretaker {
   private final List<Originator.Memento> savedStates = new ArrayList<>();
-  private final Originator originator = new Originator("");
+  private final Originator originator;
 
-  public void write(String string) {
-    originator.setState(string);
-  }
-
-  public String read() {
-    return originator.getState();
+  Caretaker(Originator originator) {
+    this.originator = originator;
   }
 
   public void save() {

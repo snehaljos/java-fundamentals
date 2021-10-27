@@ -7,7 +7,7 @@ import junit.framework.TestCase;
  */
 public class PalindromeTest extends TestCase {
 
-  public void testPalindromes(){
+  public void testPalindromes() {
     final PalindromeCheck check = new PalindromeCheck();
 
     assertTrue(check.isPalindrome("lagerregal"));
@@ -21,7 +21,7 @@ public class PalindromeTest extends TestCase {
     assertTrue(check.isPalindrome(""));
   }
 
-  public void testNoPalindromes(){
+  public void testNoPalindromes() {
     final PalindromeCheck check = new PalindromeCheck();
 
     assertFalse(check.isPalindrome("abcde"));

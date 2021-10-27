@@ -18,6 +18,7 @@ public class MergeSortTest extends TestCase {
       assertEquals(res[i], arrayA[i]);
     }
   }
+
   public void testMergeSortArrayEven() {
     final Short[] arrayA = new Short[]{3, 6, 6, 2, 5, 4, 1, 2};
     Short[] res = MergeSort.mergeSort(arrayA);

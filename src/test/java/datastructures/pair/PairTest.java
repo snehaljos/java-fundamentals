@@ -7,7 +7,7 @@ import junit.framework.TestCase;
  */
 public class PairTest extends TestCase {
 
-  public void testEquals(){
+  public void testEquals() {
     final Pair<Integer, Integer> a = new Pair<>(1, 2);
     final Pair<Integer, Integer> b = new Pair<>(1, 2);
     final Pair<Integer, Integer> c = new Pair<>(2, 1);
@@ -17,7 +17,7 @@ public class PairTest extends TestCase {
     assertFalse(a.equals(null));
   }
 
-  public void testKey(){
+  public void testKey() {
     final Pair<Integer, Integer> integerIntegerPair = new Pair<>(10, 4);
     final int key = integerIntegerPair.getKey();
 
@@ -25,7 +25,7 @@ public class PairTest extends TestCase {
     assertNotSame(10, integerIntegerPair.getValue());
   }
 
-  public void testValue(){
+  public void testValue() {
     final Pair<Integer, Integer> integerIntegerPair = new Pair<>(10, 4);
     final int value = integerIntegerPair.getValue();
 

@@ -13,7 +13,7 @@ public class FibonacciSequenceTest extends TestCase {
   }
 
   public void testInvalidValuesRecursive() {
-    assertEquals(-1 , FibonacciSequence.recursive(-1));
+    assertEquals(-1, FibonacciSequence.recursive(-1));
     assertEquals(-1, FibonacciSequence.recursive(-3));
   }
 
@@ -30,7 +30,7 @@ public class FibonacciSequenceTest extends TestCase {
   }
 
   public void testInvalidValuesIterative() {
-    assertEquals(-1 , FibonacciSequence.iterative(-1));
+    assertEquals(-1, FibonacciSequence.iterative(-1));
     assertEquals(-1, FibonacciSequence.iterative(-3));
   }
 

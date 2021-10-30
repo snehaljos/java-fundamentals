@@ -1,7 +1,6 @@
 pull_request_rules:
   - name: automatic merge for master when reviewed by owner
     conditions:
-      - "status-success=Travis CI - Pull Request"
       - "status-success=ci/circleci: test"
       - approved-reviews-by=LorenzNickel
       - base=master
@@ -22,7 +21,6 @@ pull_request_rules:
   - name: automatic merge for Dependabot pull requests with label
     conditions:
       - author~=^dependabot(|-preview)\[bot\]$
-      - "status-success=Travis CI - Pull Request"
       - "status-success=ci/circleci: test"
     actions:
       merge:

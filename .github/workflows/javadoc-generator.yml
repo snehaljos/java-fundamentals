@@ -22,4 +22,4 @@ jobs:
         run: |
           git config --global user.name 'Javadoc-Generator'
           git config --global user.email 'LorenzNickel@users.noreply.github.com'
-          if [[ `git status --porcelain` ]]; then echo "Uploading changes" && git add . && git commit -am "Re-generate javadoc for ${{ github.sha }}" -m "[skip travis] [skip circle]" -m "run-id: ${{ github.run_id }}" -m "run-number ${{ github.run_number }}" -m "run-attempt ${{ github.run_attempt }}" && git push; else echo "No changes to docs detected";fi
+          if [[ `git status --porcelain` ]]; then echo "Uploading changes" && git add . && git commit -am "Re-generate javadoc for ${{ github.sha }}" -m "[skip circle]" -m "run-id: ${{ github.run_id }}" -m "run-number ${{ github.run_number }}" -m "run-attempt ${{ github.run_attempt }}" && git push; else echo "No changes to docs detected";fi
